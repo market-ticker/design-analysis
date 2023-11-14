@@ -47,9 +47,39 @@ In the current early version, Chainlink integration is omitted to simplify the i
 The code repository for the project is available at:
 [Commodities Market Ticker V2](https://github.com/market-ticker/CMT/tree/v2)
 
+## Contracts
+
+### Commodity
+
+- **Contract Name**: `Commodity`
+- **Address**: [0x5062434556bcf4ce41f71c38BD9D4f57111d690E](https://sepolia.etherscan.io/address/0x5062434556bcf4ce41f71c38BD9D4f57111d690E#code)
+- **Description**: This contract represents a commodity, with properties such as ID, name, price, quantity, and category.
+
+### Buyer
+
+- **Contract Name**: `Buyer`
+- **Address**: [0x65d9cDe879b67d20D121838800EC087891a26365](https://sepolia.etherscan.io/address/0x65d9cDe879b67d20D121838800EC087891a26365#code)
+- **Description**: This contract represents a buyer, with properties and methods to manage buyer information.
+
+### Seller
+
+- **Contract Name**: `Seller`
+- **Address**: [0xF6E2B08f2dDC9e0805Eaf02768E41310d5bcaFE7](https://sepolia.etherscan.io/address/0xF6E2B08f2dDC9e0805Eaf02768E41310d5bcaFE7#code)
+- **Description**: This contract represents a seller, with properties and methods to manage seller information.
+
+### CommoditiesMarketTicker
+
+- **Contract Name**: `CommoditiesMarketTicker`
+- **Address**: [0xF242Ab57dDB64e2AA8c2143AD08913823f26EDfa](https://sepolia.etherscan.io/address/0xF242Ab57dDB64e2AA8c2143AD08913823f26EDfa#code)
+- **Description**: This is the main contract for the commodities market ticker, handling the creation of buyer and seller accounts, commodities, and the execution of trades.
+
+---
+
+Please note that all contracts are deployed on the Sepolia test network and verified on Sepolia Etherscan.
+
 ## Future Evolution
 
-- Deploy on the Sepolia testnet to validate functionality.
+- Deploy on the Sepolia testnet to validate functionality.(done)
 - Migrate to Polygon zkEVM for enhanced scalability and lower transaction costs.
 - Implement account abstraction to simplify user experience and enhance security.
 - Integrate Chainlink to provide verifiable randomness and real-time price feeds for commodities.
